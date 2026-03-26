@@ -52,7 +52,7 @@ const Contact = () => {
               </div>
               <div>
                 <h4 style={{ color: 'var(--text-muted)', marginBottom: '8px', fontSize: '0.9rem' }}>WEBSITE</h4>
-                <a href="https://zentoriadigital.com" target="_blank" rel="noopener noreferrer" style={{ fontSize: '1.2rem', fontWeight: 500, color: 'white', wordBreak: 'break-word' }}>zentoriadigital.com</a>
+                <a href="https://zentoria-digital-studio.vercel.app" target="_blank" rel="noopener noreferrer" style={{ fontSize: '1.2rem', fontWeight: 500, color: 'white', wordBreak: 'break-word' }}>zentoria-digital-studio.vercel.app</a>
               </div>
               <div>
                 <h4 style={{ color: 'var(--text-muted)', marginBottom: '8px', fontSize: '0.9rem' }}>FOLLOW US</h4>
