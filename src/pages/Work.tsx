@@ -87,10 +87,22 @@ const Work = () => {
             {/* Item 1 - Tall Card */}
             <FadeIn delay={0.2}>
               <div>
-                <div style={{ height: '500px', background: 'linear-gradient(145deg, #1f1f2e 0%, #0d0d12 100%)', borderRadius: '4px', position: 'relative', overflow: 'hidden', display: 'flex', alignItems: 'center', justifyContent: 'center', border: '1px solid var(--border)' }}>
+                <div style={{ 
+                  height: '500px', 
+                  backgroundImage: 'linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url("https://images.unsplash.com/photo-1557821552-17105176677c?auto=format&fit=crop&q=80&w=1600")',
+                  backgroundSize: 'cover',
+                  backgroundPosition: 'center',
+                  borderRadius: '4px', 
+                  position: 'relative', 
+                  overflow: 'hidden', 
+                  display: 'flex', 
+                  alignItems: 'center', 
+                  justifyContent: 'center', 
+                  border: '1px solid var(--border)' 
+                }}>
                   <div style={{ position: 'absolute', top: '24px', left: '24px', opacity: 0.5, fontFamily: 'var(--font-heading)' }}>[01]</div>
                   <div style={{ textAlign: 'center' }}>
-                    <div style={{ fontWeight: 500, fontSize: '2rem', padding: '0 20px' }}>E-Commerce Architectures</div>
+                    <div style={{ fontWeight: 500, fontSize: '2rem', padding: '0 20px', textShadow: '0 4px 12px rgba(0,0,0,0.5)' }}>E-Commerce Architectures</div>
                   </div>
                 </div>
                 <div style={{ marginTop: '24px' }}>
@@ -105,10 +117,22 @@ const Work = () => {
             {/* Item 3 - Medium Card */}
             <FadeIn delay={0.4}>
               <div>
-                <div style={{ height: '500px', background: 'linear-gradient(145deg, #251e19 0%, #17110e 100%)', borderRadius: '4px', position: 'relative', overflow: 'hidden', display: 'flex', alignItems: 'center', justifyContent: 'center', border: '1px solid var(--border)' }}>
+                <div style={{ 
+                  height: '500px', 
+                  backgroundImage: 'linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url("https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=1600")',
+                  backgroundSize: 'cover',
+                  backgroundPosition: 'center',
+                  borderRadius: '4px', 
+                  position: 'relative', 
+                  overflow: 'hidden', 
+                  display: 'flex', 
+                  alignItems: 'center', 
+                  justifyContent: 'center', 
+                  border: '1px solid var(--border)' 
+                }}>
                   <div style={{ position: 'absolute', top: '24px', left: '24px', opacity: 0.5, fontFamily: 'var(--font-heading)' }}>[03]</div>
                   <div style={{ textAlign: 'center' }}>
-                    <div style={{ fontWeight: 500, fontSize: '2rem', padding: '0 20px' }}>Data-Driven SEO Domination</div>
+                    <div style={{ fontWeight: 500, fontSize: '2rem', padding: '0 20px', textShadow: '0 4px 12px rgba(0,0,0,0.5)' }}>Data-Driven SEO Domination</div>
                   </div>
                 </div>
                 <div style={{ marginTop: '24px' }}>
@@ -127,10 +151,22 @@ const Work = () => {
             {/* Item 2 - Medium Card */}
             <FadeIn delay={0.3}>
               <div>
-                <div style={{ height: '500px', background: 'linear-gradient(145deg, #2a2a2a 0%, #151515 100%)', borderRadius: '4px', position: 'relative', overflow: 'hidden', display: 'flex', alignItems: 'center', justifyContent: 'center', border: '1px solid var(--border)' }}>
+                <div style={{ 
+                  height: '500px', 
+                  backgroundImage: 'linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url("https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=1600")',
+                  backgroundSize: 'cover',
+                  backgroundPosition: 'center',
+                  borderRadius: '4px', 
+                  position: 'relative', 
+                  overflow: 'hidden', 
+                  display: 'flex', 
+                  alignItems: 'center', 
+                  justifyContent: 'center', 
+                  border: '1px solid var(--border)' 
+                }}>
                   <div style={{ position: 'absolute', top: '24px', left: '24px', opacity: 0.5, fontFamily: 'var(--font-heading)' }}>[02]</div>
                   <div style={{ textAlign: 'center' }}>
-                    <div style={{ fontWeight: 500, fontSize: '2rem', padding: '0 20px' }}>SaaS MVP Platforms</div>
+                    <div style={{ fontWeight: 500, fontSize: '2rem', padding: '0 20px', textShadow: '0 4px 12px rgba(0,0,0,0.5)' }}>SaaS MVP Platforms</div>
                   </div>
                 </div>
                 <div style={{ marginTop: '24px' }}>
@@ -145,10 +181,22 @@ const Work = () => {
             {/* Item 4 - Tall Card */}
             <FadeIn delay={0.5}>
               <div>
-                <div style={{ height: '500px', background: 'linear-gradient(145deg, #1c261e 0%, #0e120f 100%)', borderRadius: '4px', position: 'relative', overflow: 'hidden', display: 'flex', alignItems: 'center', justifyContent: 'center', border: '1px solid var(--border)' }}>
+                <div style={{ 
+                  height: '500px', 
+                  backgroundImage: 'linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url("https://images.unsplash.com/photo-1533750349088-cd871a92f312?auto=format&fit=crop&q=80&w=1600")',
+                  backgroundSize: 'cover',
+                  backgroundPosition: 'center',
+                  borderRadius: '4px', 
+                  position: 'relative', 
+                  overflow: 'hidden', 
+                  display: 'flex', 
+                  alignItems: 'center', 
+                  justifyContent: 'center', 
+                  border: '1px solid var(--border)' 
+                }}>
                   <div style={{ position: 'absolute', top: '24px', left: '24px', opacity: 0.5, fontFamily: 'var(--font-heading)' }}>[04]</div>
                   <div style={{ textAlign: 'center' }}>
-                    <div style={{ fontWeight: 500, fontSize: '2rem', padding: '0 20px' }}>High-Converting Funnels</div>
+                    <div style={{ fontWeight: 500, fontSize: '2rem', padding: '0 20px', textShadow: '0 4px 12px rgba(0,0,0,0.5)' }}>High-Converting Funnels</div>
                   </div>
                 </div>
                 <div style={{ marginTop: '24px' }}>

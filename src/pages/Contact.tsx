@@ -108,6 +108,8 @@ const Contact = () => {
                   <label style={{ fontSize: '0.9rem', color: 'var(--text-secondary)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Phone Number</label>
                   <PhoneInput
                     defaultCountry="US"
+                    maxLength={16}
+                    smartCaret={true}
                     value={formData.phone}
                     onChange={(val) => setFormData({...formData, phone: val as string || ''})}
                     style={{ padding: '0 0 16px 0', borderBottom: '1px solid var(--border)' }}

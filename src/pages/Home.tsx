@@ -119,15 +119,46 @@ const Home = () => {
           
           <div className="grid-2">
             {[
-              { title: 'E-Commerce Architectures', category: 'Web Development & SEO', color: 'linear-gradient(145deg, #1f1f2e 0%, #0d0d12 100%)' },
-              { title: 'SaaS MVP Dashboards', category: 'Software Development', color: 'linear-gradient(145deg, #2a2a2a 0%, #151515 100%)' },
-              { title: 'Lead Generation Funnels', category: 'Digital Marketing', color: 'linear-gradient(145deg, #1c261e 0%, #0e120f 100%)' },
-              { title: 'Modern Brand Identities', category: 'Web Design', color: 'linear-gradient(145deg, #2a202a 0%, #151015 100%)' }
+              { 
+                title: 'E-Commerce Architectures', 
+                category: 'Web Development & SEO', 
+                image: 'https://images.unsplash.com/photo-1557821552-17105176677c?auto=format&fit=crop&q=80&w=1600',
+                overlay: 'rgba(0, 0, 0, 0.5)'
+              },
+              { 
+                title: 'SaaS MVP Dashboards', 
+                category: 'Software Development', 
+                image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=1600',
+                overlay: 'rgba(0, 0, 0, 0.5)'
+              },
+              { 
+                title: 'Lead Generation Funnels', 
+                category: 'Digital Marketing', 
+                image: 'https://images.unsplash.com/photo-1533750349088-cd871a92f312?auto=format&fit=crop&q=80&w=1600',
+                overlay: 'rgba(0, 0, 0, 0.5)'
+              },
+              { 
+                title: 'Modern Brand Identities', 
+                category: 'Web Design', 
+                image: 'https://images.unsplash.com/photo-1509343256512-d77a5cb3791b?auto=format&fit=crop&q=80&w=1600',
+                overlay: 'rgba(0, 0, 0, 0.5)'
+              }
             ].map((proj, i) => (
               <FadeIn delay={i * 0.1} key={i}>
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
-                  <div style={{ height: '400px', background: proj.color, borderRadius: '8px', border: '1px solid var(--border)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                    <div style={{ fontSize: '1.5rem', fontWeight: 500 }}>{proj.title}</div>
+                  <div style={{ 
+                    height: '400px', 
+                    backgroundImage: `linear-gradient(to bottom, ${proj.overlay}, ${proj.overlay}), url("${proj.image}")`, 
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center',
+                    borderRadius: '8px', 
+                    border: '1px solid var(--border)', 
+                    display: 'flex', 
+                    alignItems: 'center', 
+                    justifyContent: 'center',
+                    overflow: 'hidden'
+                  }}>
+                    <div style={{ fontSize: '1.5rem', fontWeight: 500, textAlign: 'center', padding: '0 20px', textShadow: '0 4px 12px rgba(0,0,0,0.5)' }}>{proj.title}</div>
                   </div>
                   <div>
                     <h3 style={{ fontSize: '1.3rem' }}>{proj.title}</h3>
