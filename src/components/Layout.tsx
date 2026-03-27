@@ -1,6 +1,8 @@
 import { Outlet, Link } from 'react-router-dom';
 import { ArrowUpRight } from 'lucide-react';
 
+// v1.1.0 - Updated Footer Layout
+
 const Layout = () => {
   return (
     <>
