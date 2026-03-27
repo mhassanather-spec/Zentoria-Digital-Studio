@@ -267,7 +267,10 @@ a {
 .footer {
   border-top: 1px solid var(--border);
   padding: 80px 0 100px;
-  background: var(--bg);
+  background-image: linear-gradient(to bottom, rgba(9,9,11,1) 0%, rgba(9,9,11,0.4) 30%, rgba(9,9,11,0.4) 100%), url('/footer-bg.png');
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
   position: relative;
   overflow: hidden;
 }
