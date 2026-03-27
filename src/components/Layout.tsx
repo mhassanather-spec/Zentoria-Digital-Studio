@@ -57,7 +57,7 @@ const Layout = () => {
             </h2>
           </div>
           <div style={{ textAlign: 'center', marginTop: '40px', color: 'var(--text-muted)', fontSize: '0.8rem' }}>
-            &copy; {new Date().getFullYear()} Zentoria Digital Studio. All rights reserved.
+            &copy; {new Date().getFullYear()} Zentoria Digital Studio — NEW FOOTER V110. All rights reserved.
           </div>
         </div>
       </footer>
