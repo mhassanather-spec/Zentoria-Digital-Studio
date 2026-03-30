@@ -1,37 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Home Page -->
   <url>
-    <loc>https://zentoria-digital-studio.vercel.app/</loc>
+    <loc>https://zentoriadigital.com/</loc>
+    <lastmod>2026-03-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
+  
+  <!-- Services Page -->
   <url>
-    <loc>https://zentoria-digital-studio.vercel.app/services</loc>
+    <loc>https://zentoriadigital.com/services</loc>
+    <lastmod>2026-03-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+  
+  <!-- Work / Portfolio Page -->
   <url>
-    <loc>https://zentoria-digital-studio.vercel.app/work</loc>
+    <loc>https://zentoriadigital.com/work</loc>
+    <lastmod>2026-03-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+  
+  <!-- Pricing Page -->
   <url>
-    <loc>https://zentoria-digital-studio.vercel.app/pricing</loc>
+    <loc>https://zentoriadigital.com/pricing</loc>
+    <lastmod>2026-03-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+  
+  <!-- Contact / Project Start Page -->
   <url>
-    <loc>https://zentoria-digital-studio.vercel.app/contact</loc>
+    <loc>https://zentoriadigital.com/contact</loc>
+    <lastmod>2026-03-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  
+  <!-- Privacy Policy -->
   <url>
-    <loc>https://zentoria-digital-studio.vercel.app/privacy</loc>
+    <loc>https://zentoriadigital.com/privacy</loc>
+    <lastmod>2026-03-30</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
+  
+  <!-- Terms of Service -->
   <url>
-    <loc>https://zentoria-digital-studio.vercel.app/terms</loc>
+    <loc>https://zentoriadigital.com/terms</loc>
+    <lastmod>2026-03-30</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
