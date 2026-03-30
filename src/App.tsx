@@ -1,4 +1,6 @@
+import { useState } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { AnimatePresence } from 'framer-motion';
 import ScrollToTop from './components/ScrollToTop';
 import Layout from './components/Layout';
 import Home from './pages/Home';
@@ -9,23 +11,36 @@ import Contact from './pages/Contact';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsOfService from './pages/TermsOfService';
 import ConsentBanner from './components/ConsentBanner';
+import Loader from './components/Loader';
 
 const App = () => {
+  const [loading, setLoading] = useState(true);
+
   return (
     <BrowserRouter>
-      <ScrollToTop />
-      <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route index element={<Home />} />
-          <Route path="services" element={<Services />} />
-          <Route path="work" element={<Work />} />
-          <Route path="pricing" element={<Pricing />} />
-          <Route path="contact" element={<Contact />} />
-          <Route path="privacy" element={<PrivacyPolicy />} />
-          <Route path="terms" element={<TermsOfService />} />
-        </Route>
-      </Routes>
-      <ConsentBanner />
+      <AnimatePresence mode="wait">
+        {loading && (
+          <Loader onComplete={() => setLoading(false)} />
+        )}
+      </AnimatePresence>
+      
+      {!loading && (
+        <>
+          <ScrollToTop />
+          <Routes>
+            <Route path="/" element={<Layout />}>
+              <Route index element={<Home />} />
+              <Route path="services" element={<Services />} />
+              <Route path="work" element={<Work />} />
+              <Route path="pricing" element={<Pricing />} />
+              <Route path="contact" element={<Contact />} />
+              <Route path="privacy" element={<PrivacyPolicy />} />
+              <Route path="terms" element={<TermsOfService />} />
+            </Route>
+          </Routes>
+          <ConsentBanner />
+        </>
+      )}
     </BrowserRouter>
   );
 };
