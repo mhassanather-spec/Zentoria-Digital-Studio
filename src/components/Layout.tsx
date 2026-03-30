@@ -1,11 +1,28 @@
+import { useState, useEffect } from 'react';
 import { Outlet, Link, useLocation } from 'react-router-dom';
-import { ArrowUpRight } from 'lucide-react';
+import { ArrowUpRight, Menu, X } from 'lucide-react';
+import { motion, AnimatePresence } from 'framer-motion';
 
-// v1.2.1 - Conditional Premium Footer
+// v1.3.0 - Premium Hamburger Mobile Menu
 
 const Layout = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const location = useLocation();
   const isHomePage = location.pathname === '/';
+
+  // Close menu when location changes
+  useEffect(() => {
+    setIsMenuOpen(false);
+  }, [location]);
+
+  // Prevent scrolling when menu is open
+  useEffect(() => {
+    if (isMenuOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+  }, [isMenuOpen]);
 
   return (
     <>
@@ -43,6 +60,7 @@ const Layout = () => {
             <img src="/logo.svg" alt="Zentoria Digital Studio Logo" className="logo-img" />
             <span>Zentoria <span className="studio-text">Digital Studio</span></span>
           </Link>
+          
           <div className="nav-links">
             <Link to="/work" className="nav-link">Work</Link>
             <Link to="/services" className="nav-link">Services</Link>
@@ -52,16 +70,43 @@ const Layout = () => {
               Book a call
             </Link>
           </div>
+
+          <button 
+            className="mobile-hamburger" 
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            aria-label="Toggle menu"
+          >
+            {isMenuOpen ? <X size={28} /> : <Menu size={28} />}
+          </button>
         </div>
       </nav>
 
-      {/* MOBILE BOTTOM NAV */}
-      <div className="layout-mobile-nav">
-         <Link to="/work" className="nav-link">Work</Link>
-         <Link to="/services" className="nav-link">Services</Link>
-         <Link to="/pricing" className="nav-link">Pricing</Link>
-         <Link to="/contact" className="nav-link">Contact</Link>
-      </div>
+      {/* MOBILE FULL-SCREEN MENU OVERLAY */}
+      <AnimatePresence>
+        {isMenuOpen && (
+          <motion.div 
+            className="mobile-menu-overlay"
+            initial={{ opacity: 0, x: '100%' }}
+            animate={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: '100%' }}
+            transition={{ type: 'spring', damping: 25, stiffness: 200 }}
+          >
+            <div className="mobile-menu-content">
+              <nav className="mobile-nav-links">
+                 <Link to="/work" onClick={() => setIsMenuOpen(false)}>Work</Link>
+                 <Link to="/services" onClick={() => setIsMenuOpen(false)}>Services</Link>
+                 <Link to="/pricing" onClick={() => setIsMenuOpen(false)}>Pricing</Link>
+                 <Link to="/contact" onClick={() => setIsMenuOpen(false)}>Contact</Link>
+              </nav>
+              <div className="mobile-menu-footer">
+                <Link to="/contact" className="btn btn-primary" style={{ width: '100%' }}>
+                  Book a call
+                </Link>
+              </div>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
 
 
 
