@@ -937,7 +937,7 @@ a {
 }
 
 /* MOBILE RESPONSIVE SYSTEM (Consolidated) */
-/* MOBILE RESPONSIVE SYSTEM (Ultimate Revision) */
+/* MOBILE RESPONSIVE SYSTEM (Ultimate Revision 2.0) */
 @media (max-width: 1024px) {
   .hero-grid {
     grid-template-columns: 1fr !important;
@@ -958,16 +958,40 @@ a {
   .hero-card {
     max-width: 320px;
   }
+
+  .grid-3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-upper {
+    grid-template-columns: 1fr;
+    gap: 60px;
+    padding: 80px 0;
+  }
 }
 
 @media (max-width: 768px) {
-  /* Navigation Fixes (Force hide desktop links, show mobile nav) */
-  .nav-header .nav-links {
+  /* Navigation Fixes - Stricter Hiding */
+  .nav-header .nav-links, .nav-links {
     display: none !important;
   }
   
   .nav-container {
+    display: flex !important;
     justify-content: center !important;
+    align-items: center !important;
+    width: 100% !important;
+  }
+
+  .logo-container {
+    font-size: 1.1rem;
+    gap: 8px;
+    margin: 0 auto;
+  }
+
+  .logo-img {
+    width: 28px;
+    height: 28px;
   }
 
   .layout-mobile-nav {
@@ -996,10 +1020,21 @@ a {
     letter-spacing: 0.05em;
   }
 
+  /* Grid Resets */
+  .grid-2, .grid-3, .masonry-grid, .contact-grid, .work-header-grid {
+    grid-template-columns: 1fr !important;
+    gap: 32px !important;
+  }
+
+  .masonry-col-offset {
+    margin-top: 0 !important;
+  }
+
   /* Typography & Scaling */
   .hero-bg-text {
     font-size: clamp(80px, 20vw, 150px) !important;
     line-height: 0.4 !important;
+    opacity: 0.05 !important;
   }
 
   .hero-bg-text.solid { top: 25% !important; }
@@ -1010,33 +1045,70 @@ a {
     letter-spacing: 0.05em !important; 
   }
 
-  .hero-grid h1 {
-    font-size: 2rem !important;
-    line-height: 1.15;
-    margin-bottom: 20px;
+  .hero-since {
+    position: relative !important;
+    top: 0 !important;
+    text-align: center !important;
+    margin-bottom: 20px !important;
+    font-size: 0.7rem !important;
   }
 
-  .hero-grid p {
-    font-size: 0.95rem !important;
+  .title-large {
+    font-size: 2.5rem !important;
+  }
+
+  .subtitle {
+    font-size: 1rem !important;
     padding: 0 10px;
   }
 
-  /* Spacing */
-  .section {
-    padding: 30px 0 !important;
+  /* Pricing Specifics */
+  .plan-tab-container {
+    gap: 8px;
   }
 
-  .hero-since {
-    position: relative !important;
-    display: block !important;
-    text-align: center !important;
-    margin: 0 auto 20px auto !important;
-    font-size: 0.65rem !important;
+  .plan-tab {
+    padding: 10px 16px;
+    font-size: 0.8rem;
   }
 
   /* Footer Mobile Logic */
   .footer {
     padding: 60px 0 140px !important;
+  }
+
+  .footer-upper {
+    margin-bottom: 80px !important;
+    text-align: center;
+  }
+
+  .footer-upper-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-email-main {
+    font-size: 1.8rem !important;
+    text-underline-offset: 8px;
+    margin-bottom: 40px !important;
+  }
+
+  .footer-quote-container {
+    justify-content: center;
+    margin-bottom: 40px !important;
+  }
+
+  .footer-quote {
+    font-size: 1.1rem !important;
+  }
+
+  .footer-nav-col {
+    align-items: center !important;
+  }
+
+  .footer-nav-link {
+    font-size: 1.5rem !important;
   }
 
   .footer-top {
@@ -1052,7 +1124,7 @@ a {
   }
 
   .footer-signature {
-    font-size: clamp(2rem, 12vw, 4.5rem) !important;
+    font-size: 14vw !important;
     margin-top: 20px !important;
     display: block !important;
     width: 100% !important;
@@ -1075,6 +1147,18 @@ a {
 
   .hero-card {
     max-width: 280px !important;
+  }
+
+  .btn {
+    width: 100%;
+    padding: 12px 20px;
+  }
+
+  .hero-proof {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    bottom: 20px;
   }
 }
 

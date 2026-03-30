@@ -53,15 +53,15 @@ const Layout = () => {
             </Link>
           </div>
         </div>
-
-        {/* MOBILE BOTTOM NAV */}
-        <div className="layout-mobile-nav">
-           <Link to="/work" className="nav-link">Work</Link>
-           <Link to="/services" className="nav-link">Services</Link>
-           <Link to="/pricing" className="nav-link">Pricing</Link>
-           <Link to="/contact" className="nav-link">Contact</Link>
-        </div>
       </nav>
+
+      {/* MOBILE BOTTOM NAV */}
+      <div className="layout-mobile-nav">
+         <Link to="/work" className="nav-link">Work</Link>
+         <Link to="/services" className="nav-link">Services</Link>
+         <Link to="/pricing" className="nav-link">Pricing</Link>
+         <Link to="/contact" className="nav-link">Contact</Link>
+      </div>
 
 
 
