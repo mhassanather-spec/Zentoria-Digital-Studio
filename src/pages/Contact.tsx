@@ -68,7 +68,7 @@ const Contact = () => {
             </h1>
 
             {status === 'success' ? (
-              <div style={{ padding: '40px', background: 'rgba(255,255,255,0.02)', borderRadius: '8px', border: '1px solid var(--border)' }}>
+              <div style={{ padding: '40px', background: 'rgba(0, 0, 0, 0.45)', backdropFilter: 'blur(16px)', borderRadius: '12px', border: '1px solid var(--border)' }}>
                 <h3 style={{ fontSize: '2rem', marginBottom: '16px' }}>Inquiry Received!</h3>
                 <p style={{ color: 'var(--text-secondary)' }}>Thank you for reaching out. Our team will review your details and get back to you within 24 hours.</p>
                 <button onClick={() => setStatus('idle')} className="btn btn-secondary mobile-full" style={{ marginTop: '24px' }}>Submit another</button>

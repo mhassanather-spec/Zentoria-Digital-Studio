@@ -85,7 +85,7 @@ const Pricing = () => {
           <div style={{ marginTop: '80px' }}>
             <div className="grid-2">
               <FadeIn delay={0.1}>
-                <div className="card glass" style={{ border: '1px dashed var(--border)', background: 'rgba(255,255,255,0.01)', padding: '50px', textAlign: 'center' }}>
+                <div className="card glass" style={{ border: '1px dashed var(--border)', background: 'rgba(0, 0, 0, 0.25)', padding: '50px', textAlign: 'center' }}>
                   <Sparkles size={40} style={{ marginBottom: '24px', opacity: 0.5 }} />
                   <h3 style={{ fontSize: '2rem', marginBottom: '16px' }}>Elite All-in-One</h3>
                   <p style={{ color: 'var(--text-secondary)', marginBottom: '32px' }}>Full ecosystem dominance. Includes Marketing, SEO, Design, and Development in one synchronized engine.</p>
